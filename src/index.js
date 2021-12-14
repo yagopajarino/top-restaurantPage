@@ -1,5 +1,6 @@
 import page_load from "./bones.js"
 import home from "./home.js"
+import menu from "./menu.js"
 import './style.css';
 
 page_load()
@@ -13,4 +14,4 @@ function insertarAntesDelFooter(nodo){
     contenedor.insertBefore(nodo,footer)
 }
 
-insertarAntesDelFooter(home())
+insertarAntesDelFooter(menu())
