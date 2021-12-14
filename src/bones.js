@@ -4,16 +4,22 @@ export default function  page_load(){
     let contenedor = document.querySelector("#content")
     let h1 = document.createElement("h1")
     h1.textContent = "Welcome to Pizzarda"
+    h1.className = "mainTitle"
     let p = document.createElement("p")
+    p.className = "subtitle"
     p.textContent = "Baking since 2021"
 
     let tabs = document.createElement("div")
-    let home = document.createElement("span")
+    tabs.className = "buttonsDiv"
+    let home = document.createElement("button")
     home.textContent = "Home"
-    let contact = document.createElement("span")
+    home.classList.toggle("tabButton")
+    let contact = document.createElement("button")
     contact.textContent = "Contact"
-    let menu = document.createElement("span")
+    contact.classList.toggle("tabButton")
+    let menu = document.createElement("button")
     menu.textContent = "Menu"
+    menu.classList.toggle("tabButton")
 
     tabs.appendChild(home)
     tabs.appendChild(menu)
