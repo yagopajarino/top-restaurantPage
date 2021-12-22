@@ -1,13 +1,10 @@
-import pizzaLogo from "./pizzaLogo.png"
+import burgaLogo from "./burgaPict.jpeg"
 
 export default function  page_load(){
     let contenedor = document.querySelector("#content")
     let h1 = document.createElement("h1")
-    h1.textContent = "Welcome to Pizzarda"
+    h1.textContent = "Burga"
     h1.className = "mainTitle"
-    let p = document.createElement("p")
-    p.className = "subtitle"
-    p.textContent = "Baking since 2021"
 
     let tabs = document.createElement("div")
     tabs.className = "buttonsDiv"
@@ -31,6 +28,7 @@ export default function  page_load(){
     let a = document.createElement("a")
     a.href = "https://github.com/yagopajarino"
     a.target ="_blank"
+    a.id = "footerLink"
     let i = document.createElement("i")
     i.className = "fab fa-github"
 
@@ -38,7 +36,6 @@ export default function  page_load(){
     footer.append(a)
 
     contenedor.appendChild(h1)
-    contenedor.appendChild(p)
     contenedor.appendChild(tabs)
     contenedor.appendChild(footer)
 }

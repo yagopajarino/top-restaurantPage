@@ -2,6 +2,7 @@ export default function menu() {
     let div = document.createElement("div")
     let h1 = document.createElement("h1")
     h1.textContent = "Menu"
+    h1.classList = "title"
 
     let pizzaHeader = document.createElement("h2")
     pizzaHeader.textContent = "Pizzas"
