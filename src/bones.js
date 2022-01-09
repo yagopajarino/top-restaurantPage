@@ -22,7 +22,7 @@ export default function  page_load(){
     tabs.appendChild(menu)
     tabs.appendChild(contact)
 
-    let footer = document.createElement("p")
+    let footer = document.createElement("footer")
     footer.id = "footer"
     footer.textContent = "2021 yagopajarino"
     let a = document.createElement("a")

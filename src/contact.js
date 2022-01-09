@@ -38,6 +38,16 @@ export default function contact() {
         social.appendChild(a)
     });
 
+    let ifrm = document.createElement("iframe");
+    ifrm.setAttribute("src", "https://www.openstreetmap.org/export/embed.html?bbox=-58.386111259460456%2C-34.606879346697006%2C-58.37709903717041%2C-34.60061824106917&amp;layer=mapnik&amp;marker=-34.60374885289059%2C-58.38160514831543")
+    ifrm.width = "425"
+    ifrm.height="350"
+    ifrm.frameborder="0" 
+    ifrm.scrolling="no" 
+    ifrm.marginheight="0" 
+    ifrm.marginwidth="0"
+
+    div.appendChild(ifrm)
     div.appendChild(subt)
     div.appendChild(horarios)
     div.appendChild(title)
