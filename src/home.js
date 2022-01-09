@@ -10,6 +10,7 @@ export default function home(){
     p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ex eu elit consectetur vestibulum."
     let img = document.createElement("img")
     img.src = burga
+    img.classList.toggle("imgHome")
 
     div.appendChild(title)
     div.appendChild(p)

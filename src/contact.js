@@ -1,3 +1,8 @@
+import fb from "./facebook.png"
+import ig from "./instagram.png"
+import wp from "./whatsapp.png"
+import tw from "./twitter.png"
+
 export default function contact() {
     let div = document.createElement("div")
     let subt = document.createElement("h1")
@@ -31,10 +36,14 @@ export default function contact() {
     let social = document.createElement("div")
     social.classList = "icons"
     let redes = ["facebook", "instagram", "whatsapp", "twitter"]
+    let icons = {"facebook":fb, "instagram":ig, "whatsapp":wp, "twitter":tw}
     redes.forEach(red => {
         let a = document.createElement("a")
         a.href = `https://${red}.com/`
-        a.textContent = red
+        let icon = document.createElement("img")
+        icon.src = icons[red]
+        icon.classList.toggle("iconImg")
+        a.appendChild(icon)
         social.appendChild(a)
     });
 
